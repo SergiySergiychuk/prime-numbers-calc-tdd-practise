@@ -1,3 +1,3 @@
-## Primar numbers calculator. TDD practise.
+## Prime numbers calculator. TDD practise.
 
 ![](results/result.png)
