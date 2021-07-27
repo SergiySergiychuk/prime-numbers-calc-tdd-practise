@@ -1,27 +1,27 @@
-#include "PrimeNumber.Core/PrimeNumberCalculator.h"
-
-
-PrimeNumberCalculator::PrimeNumberCalculator() = default;
-
-
-std::vector<size_t> PrimeNumberCalculator::GetPrimeNumbers(size_t i_till_value)
-{
-	if (i_till_value < 2) return std::vector<size_t>();
-	std::vector<size_t> primeNumbers = { 2 };
-	bool numberIsPrimar = true;
-
-	for (int i = 3; i <= i_till_value; i++)
-	{
-		for (size_t elem : primeNumbers)
-		{
-			if (i % elem == 0)
-			{
-				numberIsPrimar = false;
-				break;
-			}
-		}
-		if (numberIsPrimar) primeNumbers.push_back(i);
-		numberIsPrimar = true;
-	}
-	return primeNumbers;
-}
+//#include "PrimeNumber.Core/PrimeNumberCalculator.h"
+//
+//
+//PrimeNumberCalculator::PrimeNumberCalculator() = default;
+//
+//template<typename T>
+//std::vector<T> PrimeNumberCalculator::GetPrimeNumbers(size_t i_till_value)
+//{
+//	if (i_till_value < 2) return std::vector<size_t>();
+//	std::vector<size_t> primeNumbers = { 2 };
+//	bool numberIsPrimar = true;
+//
+//	for (int i = 3; i <= i_till_value; i++)
+//	{
+//		for (size_t elem : primeNumbers)
+//		{
+//			if (i % elem == 0)
+//			{
+//				numberIsPrimar = false;
+//				break;
+//			}
+//		}
+//		if (numberIsPrimar) primeNumbers.push_back(i);
+//		numberIsPrimar = true;
+//	}
+//	return primeNumbers;
+//}
